@@ -3,11 +3,11 @@ const mysql_config = require('./secret');
 const {logger} = require('./winston');
 
 const pool = mysql.createPool({
-    host: 'database-1.ccdtizq4ztjw.ap-northeast-2.rds.amazonaws.com',
-    user: 'rp2',
+    host: '',
+    user: '',
     port: 3306,
-    password: mysql_config.password,
-    database: 'TestMangoPlate'
+    password: '',
+    database: ''
 });
 
 module.exports = {
