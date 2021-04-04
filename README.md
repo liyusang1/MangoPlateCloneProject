@@ -1,14 +1,14 @@
 # MangoPlate APP Clone Project
 
-## MangoPlate Clone project에 사용된 백엔드 코드 저장소 입니다.
+## :melon: MangoPlate Clone project에 사용된 백엔드 코드 저장소 입니다.
 
 ---
-## 팀원
+## 🏠  팀원
 * [(Radi) 황상연](https://github.com/WhiteRadish-Hwang) : 프론트엔드 개발
 * [(Lake) 황성준](https://github.com/sungjun1116) : 백엔드 개발
 * [(Andrew)이유상](https://github.com/liyusang1) : 백엔드 개발
 ---
-## 개발 환경
+## 🛠 개발 환경
 >AWS EC2에서 Node를 통해 서버를 구동하고 AWS RDS를 사용.
 
 <img src="https://firebasestorage.googleapis.com/v0/b/mangoplate-a1a46.appspot.com/o/nginx.png?alt=media&token=838f77d3-a729-4a81-b1ad-8befaf55d429" width="250" height="100"> <img src="https://miro.medium.com/max/960/0*uXXbbKGKNQUQonbC.png" width="230" height="100">
@@ -35,27 +35,27 @@ express 는 /config/express.js 에 설정 값들이 모여있다.
 ```
 
 ---
-## 프로젝트 기간
+## :calendar: 프로젝트 기간
 
 ```
 2021-02-03 ~ 2021-02-17
 ```
 
 ---
-## ERD 설계도
+## :computer: ERD 설계도
 > AQueryTool 이용
 
 <img src="https://firebasestorage.googleapis.com/v0/b/mangoplate-a1a46.appspot.com/o/%EB%A7%9D%EA%B3%A0%ED%94%8C%EB%A0%88%EC%9D%B4%ED%8A%B8_20210316_31_45.png?alt=media&token=8c48c75a-74a0-4113-92d6-fcfa10e22be9">
 
-## API Sheet
+## :memo: API Sheet
 
 >https://docs.google.com/spreadsheets/d/17y8Ly1hpqzqV-CuqsH1wEuEXZfPlo-qTFa1UVrqtv7Y/edit?usp=sharing
 
 
-## 시연 영상
+## :movie_camera: 시연 영상
 > https://www.youtube.com/watch?v=17xm5eXG_XQ&feature=youtu.be
 ---
-# 실행 화면
+# :iphone: 실행 화면
 
 
 ### 로그인
