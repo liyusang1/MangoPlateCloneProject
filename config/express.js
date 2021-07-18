@@ -12,10 +12,7 @@ module.exports = function () {
   app.use(methodOverride());
   app.use(cors());
 
-  // app.use(express.static(process.cwd() + '/public'));
-
   /* App (Android, iOS) */
-  require("../src/app/routes/indexRoute")(app);
   require("../src/app/routes/userRoute")(app);
   require("../src/app/routes/restaurantRoute")(app);
   require("../src/app/routes/authRoute")(app);
@@ -23,10 +20,5 @@ module.exports = function () {
   require("../src/app/routes/eatDealRoute")(app);
   require("../src/app/routes/paymentRoute")(app);
 
-  /* Web */
-  // require('../src/web/routes/indexRoute')(app);
-
-  /* Web Admin*/
-  // require('../src/web-admin/routes/indexRoute')(app);
   return app;
 };

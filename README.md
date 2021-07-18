@@ -51,6 +51,47 @@ express 는 /config/express.js 에 설정 값들이 모여있다.
 
 >https://docs.google.com/spreadsheets/d/17y8Ly1hpqzqV-CuqsH1wEuEXZfPlo-qTFa1UVrqtv7Y/edit?usp=sharing
 
+|기능|Method|URL|
+|:---|:---:|:---:|
+|카카오 로그인|POST|/kakao-login|
+|페이스북 로그인|POST|/facebook-login|
+|사용자 프로필 조회|GET|/users/:userId|
+|내정보 수정|PATCH|/users/:userId?userinfofilter|
+|식당 상세 조회|GET|/restaurants/:restaurantId|
+|식당 사진 상세 조회|GET|/reviews/images/:imgId|
+|가봤어요 조회|GET|/restaurants/:restaurantId/visited|
+|가봤어요 등록|POST|/restaurants/:restaurantId/visited?status=1|
+|식당 등록|POST|/restaurants|
+|식당 가고싶다 추가, 해제|PATCH|/restaurants/:restaurantId/like|
+|소식 조회|GET|/reviews?page=0&limit=10&locationfilter=1&expressionfilter=1|
+|리뷰 상세 조회|GET|/reviews/:reviewId|
+|리뷰 작성|POST|/reviews|
+|리뷰 수정|PATCH|/reviews/:reviewId|
+|리뷰 삭제|PATCH|/reviews/:reviewId/status|
+|리뷰 좋아요 추가, 해제|PATCH|/reviews/:reviewId/like|
+|리뷰 댓글 작성|POST|/reviews/:reviewId/replies|
+|리뷰 댓글 수정|PATCH|/reviews/:reviewId/replies/:replyId|
+|리뷰 댓글 삭제|PATCH|/reviews/:reviewId/replies/:replyId/status|
+|잇딜 조회|GET|/eat-deals?page=0&limit=30&locationfilter=1&locationfilter=2|
+|모든 잇딜 조회|GET|/eat-deals-all?page=0&limit=30|
+|잇딜 정보 상세 조회|GET|/eat-deals/:eatDealId|
+|탑리스트 전체조회|GET|/top-list?page=0&limit=10|
+|탑리스트 상태 변경|PATCH|/top-list/:topListId|
+|탑리스트 상세 조회|GET|/top-list/:topListId?page=0&limit=10|
+|팔로워 목록 조회|GET|/users/:userId/follower|
+|팔로잉 목록 조회|GET|/users/:userId/following|
+|팔로우 상태 변경|PATCH|/following/users/:userId|
+|주문번호 생성|POST|/payments|
+|결제 검증|GET|/payments/complete?imp_uid=imp_12345678&merchant_uid=oid_987654321&imp_success=true|
+|결제 목록 조회|GET|/payments/users/:userId|
+|회원 탈퇴|PATCH|/users/:userId/status|
+|내 주변 잇딜 조회|GET|/eat-deals/users?userlatitude=37.6511723&userlongtitude=127.0481563&page=0&limit=30|
+
+|기능|Method|URL|
+|:---|:---:|:---:|
+|식당 전체 조회|GET|/restaurants?page=0&limit=10&locationfilter=1&locationfilter=2&distance=4000&sort=1&userLatitude=37.6511723&userLongitude=127.0481563|
+|식당 검색|GET|/search-restaurants?page=0&limit=30&locationfilter=1&locationfilter=2&locationfilter=3&userLatitude=37.6511723&userLongitude=127.0481563|
+
 
 ## 시연 영상
 > https://www.youtube.com/watch?v=17xm5eXG_XQ&feature=youtu.be
